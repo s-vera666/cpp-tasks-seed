@@ -15,12 +15,15 @@ template <typename Iterator>
 void bubble_sort(Iterator begin, Iterator end)
 {
     if (begin == end) return;
-    for (Iterator i = begin; i != end; ++i) {
+    for (Iterator i = begin; i != end; ++i)
+    {
         Iterator j = begin;
         Iterator next = begin;
         ++next;
-        while (next != end) {
-            if (*next < *j) {
+        while (next != end)
+        {
+            if (*next < *j)
+            {
                 std::swap(*j, *next);
             }
             ++j;
